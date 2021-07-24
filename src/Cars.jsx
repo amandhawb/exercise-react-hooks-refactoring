@@ -9,6 +9,7 @@ import carYellow from './images/carYellow.jpeg';
 function Cars() {
   const { cars, moveCar } = useContext(CarsContext);
   const { red, blue, yellow } = cars;
+
   return (
     <div>
       <div>
@@ -53,7 +54,5 @@ function Cars() {
     </div>
   )
 };
-
-Cars.contextType = CarsContext;
 
 export default Cars;
